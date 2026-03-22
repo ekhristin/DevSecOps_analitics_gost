@@ -109,7 +109,7 @@
 3. **Репутационные потери:** Если внешний исследователь найдет уязвимость в продукте компании, отсутствие понятного канала связи (security@company.com) и процесса ответа может привести к публичному разглашению уязвимости (full disclosure) до того, как компания успеет выпустить патч.
 ### Сопоставление с BSIMM и DSOMM (высокоуровнево)
 
-- **BSIMM**: присутствует отдельная активность из области *Security Testing* (SAST), но отсутствуют базовые элементы *Governance* (политики/метрики/принятие риска), *SSDL Touchpoints* (threat modeling, security requirements, security review) и *Deployment* (release gating, secure config, incident readiness).
+- **BSIMM**: присутствует отдельная активность из области *Security Testing* (SAST), но отсутствуют базовые элементы *Governance* (политики/метрики/принятие риска), *SSDL Touchpoints* (threat modeling, security requirements, security review) и *Deployment* (release gating, secure config, **пентест в т. ч. с внешними исполнителями — BSIMM PT1.1 на L1, PT3.1 на L3**, готовность к инцидентам). См. таблицу в [`bsimm.md`](bsimm.md).
 - **DSOMM**: есть техническая база (CI/CD, контейнеры, облако, IaC), но не выстроены практики по доменам *Culture & Organization* (правила, ответственность), *Build & Deployment* (security gates, artifact integrity), *Infrastructure* (IaC security, least privilege), *Monitoring & Response* (уязвимости/инциденты/логирование).
 
 ---
